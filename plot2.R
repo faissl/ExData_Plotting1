@@ -7,7 +7,6 @@ source("./plotElectric.R")
 
 pdf(file="./plot2.pdf")
 
-with(electricClean, plot(Date, Active, type="l",
-     breaks=3, ylab="Global Active Power (kilowatts)", oma=30 ))
+with(electricClean, plot(Date, Active, type="l", xlab="", ylab="Global Active Power (kilowatts)", oma=30 ))
 
 dev.off()

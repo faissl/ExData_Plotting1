@@ -8,6 +8,6 @@ source("./plotElectric.R")
 pdf(file="./plot1.pdf")
 
 hist(electricClean$Active, col="#FF0000", main="Global Active Power",
-     xlab = "Global Active Power (killowatts)", breaks=12, oma=30 )
+     xlab = "Global Active Power (killowatts)", oma=30 )
 
 dev.off()

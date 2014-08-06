@@ -7,8 +7,7 @@ source("./plotElectric.R")
 
 pdf(file="./plot3.pdf")
 
-with(electricClean, plot(Date, Submeter1, type="l",
-     breaks=3, ylab="Energy sub metering", oma=30 ))
+with(electricClean, plot(Date, Submeter1, type="l", xlab="", ylab="Energy sub metering", oma=30 ))
 
 with(electricClean, points(Date, Submeter2, type="l", col="#FF0000"))
 
