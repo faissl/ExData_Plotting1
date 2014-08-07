@@ -5,9 +5,9 @@
 
 source("./plotElectric.R")
 
-pdf(file="./plot4.pdf")
+pdf(file="./plot4.pdf", paper="letter", width=6.7, height=6.7)
 
-par(mfrow=c(2,2))
+par(mfrow=c(2,2), oma=c(0,0,0,0))
 
 with(electricClean, plot(Date, Active, type="l", xlab="", ylab="Global Active Power", oma=30 ))
 
@@ -27,3 +27,4 @@ with(electricClean, plot(Date, Reactive, type="l", xlab="datetime",
                          ylab="Global_reactive_power", oma=30 ))
 
 dev.off()
+

@@ -5,7 +5,9 @@
 
 source("./plotElectric.R")
 
-pdf(file="./plot3.pdf")
+pdf(file="./plot3.pdf", paper="letter", width=6.7, height=6.7)
+
+par(oma=c(0,0,2,0))
 
 with(electricClean, plot(Date, Submeter1, type="l", xlab="", ylab="Energy sub metering", oma=30 ))
 

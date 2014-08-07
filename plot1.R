@@ -5,7 +5,9 @@
 
 source("./plotElectric.R")
 
-pdf(file="./plot1.pdf")
+pdf(file="./plot1.pdf", paper="letter", width=6.7, height=6.7)
+
+par(mfrow=c(1,1), oma=c(2,2,2,2))
 
 hist(electricClean$Active, col="#FF0000", main="Global Active Power",
      xlab = "Global Active Power (killowatts)", oma=30 )
