@@ -5,9 +5,9 @@
 
 source("./plotElectric.R")
 
-pdf(file="./plot2.pdf", paper="letter", width=6.7, height=6.7)
+png(file="./plot2.png", width=480, height=480)
 
-par(mfrow=c(1,1), oma=c(2,2,2,2))
+par(mfrow=c(1,1), oma=c(0,0,2,0))
 
 with(electricClean, plot(Date, Active, type="l", xlab="", ylab="Global Active Power (kilowatts)", oma=30 ))
 

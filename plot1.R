@@ -5,7 +5,7 @@
 
 source("./plotElectric.R")
 
-pdf(file="./plot1.pdf", paper="letter", width=6.7, height=6.7)
+png(file="./plot1.png", width=480, height=480)
 
 par(mfrow=c(1,1), oma=c(2,2,2,2))
 

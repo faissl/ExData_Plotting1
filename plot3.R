@@ -5,7 +5,7 @@
 
 source("./plotElectric.R")
 
-pdf(file="./plot3.pdf", paper="letter", width=6.7, height=6.7)
+png(file="./plot3.png", width=480, height=480)
 
 par(oma=c(0,0,2,0))
 
